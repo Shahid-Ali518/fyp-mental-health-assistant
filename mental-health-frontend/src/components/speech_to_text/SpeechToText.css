@@ -1,0 +1,102 @@
+/* Container */
+.speech-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Heading */
+.speech-container h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* File input */
+.file-input1 {
+  margin: 15px 0;
+  padding: 10px;
+  border: 2px dashed #999;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  background: #f9f9f9;
+}
+
+.file-input1:hover {
+  border-color: #666;
+}
+
+/* Audio + button section */
+.audio-section {
+  margin-top: 20px;
+}
+
+.audio-section audio {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.audio-section button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  background: #007bff;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.audio-section button:disabled {
+  background: #999;
+  cursor: not-allowed;
+}
+
+.audio-section button:hover:not(:disabled) {
+  background: #0056b3;
+}
+
+/* Transcript section */
+.transcript-section {
+  margin-top: 30px;
+  text-align: left;
+}
+
+.transcript-section h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.transcript {
+  padding: 12px;
+  border-radius: 6px;
+  background: #f4f4f4;
+  font-size: 1rem;
+  line-height: 1.5;
+  white-space: pre-wrap;
+}
+
+/* Download button */
+.download-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  background: #28a745;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.download-btn:hover {
+  background: #1e7e34;
+}

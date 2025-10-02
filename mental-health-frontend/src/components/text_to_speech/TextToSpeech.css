@@ -1,0 +1,137 @@
+/* TextToSpeech.css - simple, clean styling */
+
+.tts-container {
+  max-width: 700px;
+  margin: 28px auto;
+  padding: 20px;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 0 6px 20px rgba(23, 43, 77, 0.06);
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial;
+  color: #102a43;
+}
+
+.tts-title {
+  margin: 0 0 12px 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.file-label {
+  display: inline-block;
+  cursor: pointer;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px dashed #cbd5e1;
+  background: #fbfdff;
+  color: #0f172a;
+  font-size: 14px;
+  margin-right: 12px;
+}
+
+.file-input {
+  display: none;
+}
+
+.file-info {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #334155;
+}
+
+.tts-actions {
+  margin-top: 16px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.btn {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.btn.primary {
+  background: linear-gradient(90deg, #2563eb 0%, #7c3aed 100%);
+  color: #fff;
+  box-shadow: 0 6px 18px rgba(37, 99, 235, 0.12);
+}
+
+.btn.primary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn.secondary {
+  background: #f1f5f9;
+  color: #0f172a;
+}
+
+.btn.download {
+  background: #10b981;
+  color: #fff;
+}
+
+.tts-error {
+  margin-top: 12px;
+  color: #b91c1c;
+  background: #fff1f2;
+  padding: 8px 10px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.player-wrap {
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.audio-player {
+  width: 100%;
+  max-width: 640px;
+  outline: none;
+}
+
+.download-row {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.raw-link {
+  color: #334155;
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+.note {
+  margin-top: 14px;
+  font-size: 13px;
+  color: #64748b;
+}
+
+/* spinner */
+.spinner {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top-color: #ffffff;
+  border-radius: 50%;
+  animation: spin 0.9s linear infinite;
+  vertical-align: middle;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

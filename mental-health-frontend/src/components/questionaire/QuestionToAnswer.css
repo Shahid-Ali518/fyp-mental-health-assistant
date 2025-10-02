@@ -1,0 +1,111 @@
+/* Container */
+.assistant-container {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  font-family: Arial, sans-serif;
+}
+
+/* Title */
+.assistant-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #333;
+}
+
+/* Input area */
+.question-input-container {
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+
+.question-input {
+  flex-grow: 1;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 6px 0 0 6px;
+  font-size: 1rem;
+}
+
+.add-button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 0 1rem;
+  border-radius: 0 6px 6px 0;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.add-button:hover {
+  background: #0056b3;
+}
+
+/* Question cards */
+.question-card {
+  background: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.question-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.question-text {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #222;
+}
+
+/* Buttons */
+.play-button,
+.record-button,
+.stop-button {
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.play-button {
+  background: #28a745;
+}
+
+.play-button:hover {
+  background: #1e7e34;
+}
+
+.record-button {
+  background: #007bff;
+  margin-top: 0.8rem;
+}
+
+.record-button:hover {
+  background: #0056b3;
+}
+
+.stop-button {
+  background: #dc3545;
+  margin-top: 0.8rem;
+}
+
+.stop-button:hover {
+  background: #a71d2a;
+}
+
+/* Answer text */
+.answer-text {
+  margin-top: 0.8rem;
+  font-size: 0.95rem;
+  color: #444;
+}
