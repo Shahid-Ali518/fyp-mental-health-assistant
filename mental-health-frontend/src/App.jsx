@@ -4,18 +4,21 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import TextToSpeech from './components/text_to_speech/TextToSpeech'
 import SpeechToText from './components/speech_to_text/SpeechToText'
 import QuestionToAnswer from './components/questionaire/QuestionToAnswer'
+import Navbar from './components/common/Navbar'
 
 function App() {
 
   return (
     <>
       <BrowserRouter>
+       <Navbar  />
+
         <Routes>
           <Route path='/pdf-to-audio' element={<TextToSpeech />} />
           <Route path='/audio-to-text' element={<SpeechToText />} />
           <Route path='/questionaire' element={<QuestionToAnswer />} />
         </Routes>
-      
+
       </BrowserRouter>
     </>
   )

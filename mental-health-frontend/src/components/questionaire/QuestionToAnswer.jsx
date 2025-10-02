@@ -85,7 +85,7 @@ const QuestionToAnswer = () => {
 
     return (
         <div className="assistant-container">
-            <h1 className="assistant-title">Mental Health AI Assistant</h1>
+            <h1 className="assistant-title">Add Questions, then answer them</h1>
 
             <div className="question-input-container">
                 <input

@@ -1,0 +1,73 @@
+/* Navbar Styling */
+.navbar {
+  background: linear-gradient(to right, #0077b6, #0096c7, #00b4d8); /* Calm medical blues */
+  color: white;
+  /* padding: 0.5rem 0.5rem;  */
+  height: 80px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); /* subtle shadow */
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.2rem; /* slightly smaller */
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.menu {
+  display: flex;
+  gap: 1.2rem;
+    padding-bottom: 90px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.3rem 0.6rem; /* smaller clickable area */
+  border-radius: 6px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.menu a:hover {
+  background: rgba(255, 255, 255, 0.15); /* subtle hover effect */
+  color: #e0f7fa; /* soft cyan */
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-top: 0.8rem;
+    background: #0096c7; /* solid blue for dropdown */
+    padding: 0.8rem;
+    border-radius: 6px;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
